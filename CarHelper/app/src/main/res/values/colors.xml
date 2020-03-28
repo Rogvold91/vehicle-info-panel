@@ -9,4 +9,12 @@
     <color name="arrow">#FF0000</color>
     <color name="labels">#00008b</color>
     <color name="values">#FFFFFF</color>
+
+    <color name="back_color">#7f7f7f</color>
+    <color name="unit_color">#ffffff</color>
+    <color name="text_color">#ffffff</color>
+    <color name="back_inner_color">#969696</color>
+    <color name="needle_color">#85ff0000</color>
+    <color name="color_line">#b4b4b4</color>
+    <color name="tick_color">#b4b4b4</color>
 </resources>

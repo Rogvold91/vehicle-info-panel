@@ -52,7 +52,6 @@ public class FullscreenActivity extends FragmentActivity {
      */
     private FragmentStateAdapter pagerAdapter;
 
-    private boolean mVisible;
     private ArrayList<DataObserver> mList = new ArrayList<>();
     private ISpeedService speedService;
     private final Runnable mHideRunnable = () -> hide();
@@ -103,7 +102,6 @@ public class FullscreenActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
-        mVisible = true;
         mContentView = findViewById(R.id.main_cont);
         mContentView.setKeepScreenOn(true);
         viewPager = findViewById(R.id.pager);
@@ -130,6 +128,12 @@ public class FullscreenActivity extends FragmentActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
+        delayedHide(100);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         delayedHide(100);
     }
 

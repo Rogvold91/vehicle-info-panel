@@ -19,61 +19,8 @@
     <integer name="start_up_speed">120</integer>
     <integer name="end_up_speed">180</integer>
 
-    <!-- ARGB format. Every item must be between 0  and 255 -->
-    <integer-array name="back_color">
-        <item>255</item>
-        <item>127</item>
-        <item>127</item>
-        <item>127</item>
-    </integer-array>
+    <integer name="label_text_size">12</integer>
+    <integer name="unit_text_size">24</integer>
 
-    <integer-array name="unit_color">
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-    </integer-array>
-
-    <integer-array name="text_color">
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-    </integer-array>
-
-    <integer-array name="back_inner_color">
-        <item>255</item>
-        <item>150</item>
-        <item>150</item>
-        <item>150</item>
-    </integer-array>
-
-    <integer-array name="needle_color">
-        <item>200</item>
-        <item>255</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-    <integer-array name="color_needle">
-        <item>200</item>
-        <item>255</item>
-        <item>0</item>
-        <item>0</item>
-    </integer-array>
-
-    <integer-array name="color_line" >
-        <item>255</item>
-        <item>180</item>
-        <item>180</item>
-        <item>180</item>
-    </integer-array>
-
-    <integer-array name="tick_color" >
-        <item>255</item>
-        <item>180</item>
-        <item>180</item>
-        <item>180</item>
-    </integer-array>
-    <!-- End -->
+    
 </resources>

@@ -25,22 +25,8 @@ public class Constants {
     public static final String STOP_SIMULATION = "com.example.carhelper.STOP_SIMULATION";
 
 
-    /**
-     * Whether or not the system UI should be auto-hidden after
-     * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
-     */
-    public static final boolean AUTO_HIDE = true;
-
-    /**
-     * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
-     * user interaction before hiding the system UI.
-     */
     public static final int AUTO_HIDE_DELAY_MILLIS = 3000;
 
-    /**
-     * Some older devices needs a small delay between UI widget updates
-     * and a change of the status and navigation bar.
-     */
     public static final int UI_ANIMATION_DELAY = 300;
 
 }

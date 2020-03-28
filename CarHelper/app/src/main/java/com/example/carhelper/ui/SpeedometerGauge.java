@@ -265,47 +265,38 @@ public class SpeedometerGauge extends View {
         canvas.drawText(unitsText, oval.centerX(), oval.centerY() / 1.5f, mUnitsPaint);
     }
 
-    private void init_back_paint(Paint paint, Paint.Style style, int[] color) {
+    private void init_back_paint(Paint paint, Paint.Style style, int color) {
         paint.setStyle(style);
-        paint.setColor(Color.argb(color[0], color[1], color[2], color[3]));
+        paint.setColor(color);
     }
 
-    private void init_text_paint(Paint paint, int[] color, int size, Paint.Align align) {
-        paint.setColor(Color.argb(color[0], color[1], color[2], color[3]));
+    private void init_text_paint(Paint paint, int color, int size, Paint.Align align) {
+        paint.setColor(color);
         paint.setTextSize(size);
         paint.setTextAlign(align);
         paint.setLinearText(true);
     }
 
-    private void init_comp_paint(Paint paint, Paint.Style style, float width, int[] color) {
+    private void init_comp_paint(Paint paint, Paint.Style style, float width, int color) {
         paint.setStyle(style);
         paint.setStrokeWidth(width);
-        paint.setColor(Color.argb(color[0], color[1], color[2], color[3]));
+        paint.setColor(color);
     }
 
     private void init() {
         if (!isInEditMode()) {
             setLayerType(View.LAYER_TYPE_HARDWARE, null);
         }
-        int[] argb = getResources().getIntArray(R.array.back_color);
-        init_back_paint(mBackgroundPaint, Paint.Style.FILL,argb);
 
-        argb = getResources().getIntArray(R.array.back_inner_color);
-        init_back_paint(mBackgroundInnerPaint, Paint.Style.FILL, argb);
+        init_back_paint(mBackgroundPaint, Paint.Style.FILL, getResources().getColor(R.color.back_color, null));
+        init_back_paint(mBackgroundInnerPaint, Paint.Style.FILL, getResources().getColor(R.color.back_inner_color, null));
 
-        argb = getResources().getIntArray(R.array.text_color);
-        init_text_paint(mTxtPaint, argb, mLabelTextSize, Paint.Align.CENTER);
-        argb = getResources().getIntArray(R.array.unit_color);
-        init_text_paint(mUnitsPaint, argb, mUnitsTextSize, Paint.Align.CENTER);
+        init_text_paint(mTxtPaint, getResources().getColor(R.color.text_color, null), mLabelTextSize, Paint.Align.CENTER);
+        init_text_paint(mUnitsPaint, getResources().getColor(R.color.unit_color, null), mUnitsTextSize, Paint.Align.CENTER);
 
-        argb = getResources().getIntArray(R.array.tick_color);
-        init_comp_paint(mTicksPaint, Paint.Style.STROKE,3.0f, argb);
-
-        argb = getResources().getIntArray(R.array.color_line);
-        init_comp_paint(mColorLinePaint, Paint.Style.STROKE,5, argb);
-
-        argb = getResources().getIntArray(R.array.color_needle);
-        init_comp_paint(mNeedlePaint, Paint.Style.STROKE,5, argb);
+        init_comp_paint(mTicksPaint, Paint.Style.STROKE,3.0f, getResources().getColor(R.color.tick_color, null));
+        init_comp_paint(mColorLinePaint, Paint.Style.STROKE,5, getResources().getColor(R.color.color_line, null));
+        init_comp_paint(mNeedlePaint, Paint.Style.STROKE,5, getResources().getColor(R.color.needle_color, null));
     }
 
 }
