@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_speed">180</integer>
+    <integer name="max_rpm">8</integer>
+    <integer name="major_ticks_speed">8</integer>
+    <integer name="major_ticks_rpm">1</integer>
+    <integer name="minor_ticks_speed">4</integer>
+    <integer name="minor_ticks_rpm">8</integer>
+    <integer name="start_low_speed">0</integer>
+    <integer name="start_low_rpm">0</integer>
+    <integer name="end_low_speed">80</integer>
+    <integer name="end_low_rpm">3</integer>
+    <integer name="start_mid_speed">80</integer>
+    <integer name="start_mid_rpm">3</integer>
+    <integer name="end_mid_speed">120</integer>
+    <integer name="end_mid_rpm">6</integer>
+    <integer name="start_up_rpm">6</integer>
+    <integer name="end_up_rpm">8</integer>
+    <integer name="start_up_speed">120</integer>
+    <integer name="end_up_speed">180</integer>
+
+    <!-- ARGB format. Every item must be between 0  and 255 -->
+    <integer-array name="back_color">
+        <item>255</item>
+        <item>127</item>
+        <item>127</item>
+        <item>127</item>
+    </integer-array>
+
+    <integer-array name="unit_color">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+    </integer-array>
+
+    <integer-array name="text_color">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+    </integer-array>
+
+    <integer-array name="back_inner_color">
+        <item>255</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+    </integer-array>
+
+    <integer-array name="needle_color">
+        <item>200</item>
+        <item>255</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="color_needle">
+        <item>200</item>
+        <item>255</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="color_line" >
+        <item>255</item>
+        <item>180</item>
+        <item>180</item>
+        <item>180</item>
+    </integer-array>
+
+    <integer-array name="tick_color" >
+        <item>255</item>
+        <item>180</item>
+        <item>180</item>
+        <item>180</item>
+    </integer-array>
+    <!-- End -->
+</resources>
